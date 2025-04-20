@@ -40,9 +40,7 @@ class ErrorScreen extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => VerificationOptionsScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => HomeScreen()),
               );
             },
           ),

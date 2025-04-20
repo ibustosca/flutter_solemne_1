@@ -23,6 +23,7 @@ const List<Map<String, String>> titulos = [
   {"checkData": "Revisa si está todo bien"},
   {"done": "Listo! Los \$"},
   {"error": "Error"},
+  {"inicio": "Inicio"},
 ];
 
 const List<Map<String, String>> enlaces = [
@@ -79,6 +80,16 @@ const Map<String, Map<String, dynamic>> botonesConEstilo = {
     "color": Color.fromARGB(255, 65, 129, 232),
     "text": "Reenviar código",
   },
+  "ingresar": {
+    "backgroundColor": Color.fromARGB(255, 232, 241, 255),
+    "color": Color.fromARGB(255, 65, 129, 232),
+    "text": "Ingresar dinero",
+  },
+  "transferir": {
+    "backgroundColor": Color.fromARGB(255, 232, 241, 255),
+    "color": Color.fromARGB(255, 65, 129, 232),
+    "text": "Transferir dinero",
+  },
 };
 
 const detalleSaldo = "De \$9.134 disponible";
@@ -96,3 +107,25 @@ const List<Map<String, String>> receiver = [
 const List<Map<String, dynamic>> error = [
   {"icono": Icons.error_outline},
 ];
+
+const List<Map<String, String>> home = [
+  {"titulo": "Dinero disponible"},
+  {"amount": "\$ 9.134"},
+  {"subAmount": "⁰⁰"},
+  {"aLiberar": "\$ 0 a liberar"},
+  {"ganancia": "\$ 4.294 generados en total"},
+  {"procentajeGanancia": "4.7%"},
+];
+
+const Map<String, Map<String, dynamic>> miniCard = {
+  "crypto": {
+    "icono": Icons.currency_bitcoin_outlined,
+    "titulo": "Compra cripto desde \$1",
+  },
+  "ahorro": {
+    "icono": Icons.savings_outlined,
+    "titulo": "Empieza a ahorrar con Reservas",
+  },
+};
+
+const invite = "¡Recomienda la app y gana hasta \$500.000!";

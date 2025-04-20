@@ -20,3 +20,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/inputs.json
+    - assets/images/promo_meli.png

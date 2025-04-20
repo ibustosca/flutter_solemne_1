@@ -1,11 +1,17 @@
 export 'package:flutter_solemne_1/widgets/container_app_bar.dart';
+export 'package:flutter_solemne_1/widgets/container_balance.dart';
+export 'package:flutter_solemne_1/widgets/container_balance_header.dart';
+export 'package:flutter_solemne_1/widgets/container_balance_summary.dart';
 export 'package:flutter_solemne_1/widgets/container_buttons.dart';
 export 'package:flutter_solemne_1/widgets/container_code_verificacion_input.dart';
 export 'package:flutter_solemne_1/widgets/container_detail_balance.dart';
 export 'package:flutter_solemne_1/widgets/container_general_list.dart';
+export 'package:flutter_solemne_1/widgets/container_invite_banner.dart';
 export 'package:flutter_solemne_1/widgets/container_input_money.dart';
 export 'package:flutter_solemne_1/widgets/container_link_text.dart';
+export 'package:flutter_solemne_1/widgets/container_mini_card.dart';
 export 'package:flutter_solemne_1/widgets/container_title_description.dart';
+export 'package:flutter_solemne_1/widgets/container_promo_banner.dart';
 export 'package:flutter_solemne_1/widgets/container_resume_check_money.dart';
 export 'package:flutter_solemne_1/widgets/container_resume_data_receiver.dart';
 export 'package:flutter_solemne_1/widgets/container_success_card.dart';
