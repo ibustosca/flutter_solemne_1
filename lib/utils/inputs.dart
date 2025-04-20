@@ -24,6 +24,7 @@ const List<Map<String, String>> titulos = [
   {"done": "Listo! Los \$"},
   {"error": "Error"},
   {"inicio": "Inicio"},
+  {"indicadores": "Indicadores comerciales"},
 ];
 
 const List<Map<String, String>> enlaces = [
@@ -93,10 +94,6 @@ const Map<String, Map<String, dynamic>> botonesConEstilo = {
   },
 };
 
-const detalleSaldo = "De \$9.134 disponible";
-
-const mensajeMantencion = "Disculpe las molestias. Estamos en mantención.";
-
 const List<Map<String, String>> receiver = [
   {"banco": "BancoEstado"},
   {"tituloTitular": "Titular"},
@@ -120,6 +117,14 @@ const List<Map<String, String>> home = [
 ];
 
 const Map<String, Map<String, dynamic>> miniCard = {
+  "shareMyData": {
+    "icono": Icons.content_copy_outlined,
+    "titulo": "Comparte tu cuenta para que te transfieran",
+  },
+  "indicators": {
+    "icono": Icons.currency_bitcoin_outlined,
+    "titulo": "Conoce los valores de las divisas hoy",
+  },
   "crypto": {
     "icono": Icons.currency_bitcoin_outlined,
     "titulo": "Compra cripto desde \$1",
@@ -130,6 +135,24 @@ const Map<String, Map<String, dynamic>> miniCard = {
   },
 };
 
+const List<Map<String, String>> indicadoresComerciales = [
+  {"nombre": "Dólar", "valor": "\$ 935,20"},
+  {"nombre": "Euro", "valor": "€ 1.015,45"},
+  {"nombre": "UF", "valor": "36.412,07"},
+  {"nombre": "UTM", "valor": "\$ 65.740"},
+  {"nombre": "Bitcoin", "valor": "\$ 64.350"},
+];
+
+const String datosTransferencia = '''
+Banco: Banco Estado
+Titular: Iván Bustos
+Cuenta: 141499564
+Tipo: Cuenta Vista
+Email: rockerrobot.tech@gmail.com
+''';
+
+const detalleSaldo = "De \$9.134 disponible";
+const mensajeMantencion = "Disculpe las molestias. Estamos en mantención.";
 const invite = "¡Recomienda la app y gana hasta \$500.000!";
 const camino = "están en camino";
 const ayuda = "Ayuda";
@@ -145,3 +168,5 @@ const successDescription1 =
 const successDescription2 =
     "Cuando se acredite te lo confirmaremos por e-mail.";
 const warningInversion = "Estás usando dinero que tenés invertido";
+const tiempo = "02:35";
+const mensajeDatosCopiados = "Datos copiados";
