@@ -22,6 +22,7 @@ const List<Map<String, String>> titulos = [
   {"insertMoney": "Cuánto dinero quieres retirar?"},
   {"checkData": "Revisa si está todo bien"},
   {"done": "Listo! Los \$"},
+  {"error": "Error"},
 ];
 
 const List<Map<String, String>> enlaces = [
@@ -90,4 +91,8 @@ const List<Map<String, String>> receiver = [
   {"titular": "Elizabeth Cerda"},
   {"tituloCuenta": "Cuenta Vista - Número de cuenta"},
   {"cuenta": "13676575"},
+];
+
+const List<Map<String, dynamic>> error = [
+  {"icono": Icons.error_outline},
 ];
