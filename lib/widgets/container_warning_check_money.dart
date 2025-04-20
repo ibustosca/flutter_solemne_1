@@ -6,7 +6,7 @@ class ContainerWarningCheckMoney extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity, // 👈 esto lo expande
+      width: double.infinity,
       color: Colors.grey[100],
       padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 20),
       child: const Text(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/widgets.dart';
+import '../utils/url_launcher.dart';
 import '../utils/inputs.dart';
+import '../screen/screen.dart';
 
 class InsertMoneyScreen extends StatelessWidget {
   const InsertMoneyScreen({super.key});
@@ -24,7 +26,7 @@ class InsertMoneyScreen extends StatelessWidget {
           Expanded(
             child: Container(
               margin: const EdgeInsets.only(top: 20, bottom: 7),
-              color: Colors.grey[200],
+              color: Colors.grey[200], // fondo gris claro
             ),
           ),
         ],
@@ -34,7 +36,13 @@ class InsertMoneyScreen extends StatelessWidget {
         child: ContainerButtons(
           type: 'continuar',
           onTap: () {
-            Navigator.pushNamed(context, 'CheckData');
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder:
+                    (context) => CheckDataScreen(monto: montoController.text),
+              ),
+            );
           },
         ),
       ),

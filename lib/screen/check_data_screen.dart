@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_solemne_1/screen/success_screen.dart';
 import '../utils/inputs.dart';
 import '../widgets/widgets.dart';
 
 class CheckDataScreen extends StatelessWidget {
-  const CheckDataScreen({super.key});
+  final String monto;
+  const CheckDataScreen({super.key, required this.monto});
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +15,12 @@ class CheckDataScreen extends StatelessWidget {
         )['checkData'];
     final enlace =
         enlaces.firstWhere((mapa) => mapa.containsKey('ayuda'))['ayuda'];
-
+    /* final montoController = TextEditingController(text: '0'); */
     return Scaffold(
       appBar: ContainerAppBar(titulo: titulo, ayudaUrl: enlace),
       body: Column(
         children: [
-          ContainerResumeCheckMoney(),
+          ContainerResumeCheckMoney(monto: monto),
           // Bloque gris oscuro desde aquí hacia abajo
           Expanded(
             child: Container(
@@ -39,7 +41,12 @@ class CheckDataScreen extends StatelessWidget {
         child: ContainerButtons(
           type: 'retirar',
           onTap: () {
-            Navigator.pushNamed(context, 'CheckData');
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SuccessScreen(monto: monto),
+              ),
+            );
           },
         ),
       ),

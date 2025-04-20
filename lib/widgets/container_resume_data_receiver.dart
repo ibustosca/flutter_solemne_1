@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
+import '../widgets/widgets.dart';
+import '../utils/inputs.dart';
 
 class ContainerResumeDataReceiver extends StatelessWidget {
   const ContainerResumeDataReceiver({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final datos = {
+      for (var item in receiver) item.keys.first: item.values.first,
+    };
+
     return Container(
-      color: Colors.grey[100], // Fondo gris claro
+      color: Colors.grey[100],
       width: double.infinity,
       margin: const EdgeInsets.only(top: 15),
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        children: const [
+        children: [
           Text(
-            'Banco Estado',
+            datos['banco']!,
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 17,
@@ -24,30 +30,31 @@ class ContainerResumeDataReceiver extends StatelessWidget {
           SizedBox(height: 12),
 
           Text(
-            'Titular',
-            style: TextStyle(fontSize: 14, color: Colors.black54),
+            datos['tituloTitular']!,
+            style: TextStyle(fontSize: 14, color: Colors.black),
           ),
           Text(
-            'Elizabeth Cerda',
+            datos['titular']!,
             style: TextStyle(fontSize: 16, color: Colors.black),
           ),
           SizedBox(height: 12),
 
           Text(
-            'Cuenta Vista - Número de cuenta',
-            style: TextStyle(fontSize: 13, color: Colors.black54),
+            datos['tituloCuenta']!,
+            style: TextStyle(fontSize: 13, color: Colors.black),
           ),
-          Text('13676575', style: TextStyle(fontSize: 16, color: Colors.black)),
+          Text(
+            datos['cuenta']!,
+            style: TextStyle(fontSize: 16, color: Colors.black),
+          ),
           SizedBox(height: 25),
 
-          Text(
-            'Agregar otra cuenta',
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.blue,
-              decoration: TextDecoration.none,
-              fontWeight: FontWeight.w400,
-            ),
+          ContainerLinkText(
+            texto: 'Agregar otra cuenta',
+            top: 0,
+            onTap: () {
+              Navigator.pushNamed(context, 'forzamosElError');
+            },
           ),
         ],
       ),

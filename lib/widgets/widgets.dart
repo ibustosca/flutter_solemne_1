@@ -8,4 +8,6 @@ export 'package:flutter_solemne_1/widgets/container_link_text.dart';
 export 'package:flutter_solemne_1/widgets/container_title_description.dart';
 export 'package:flutter_solemne_1/widgets/container_resume_check_money.dart';
 export 'package:flutter_solemne_1/widgets/container_resume_data_receiver.dart';
+export 'package:flutter_solemne_1/widgets/container_success_card.dart';
+export 'package:flutter_solemne_1/widgets/container_success_description.dart';
 export 'package:flutter_solemne_1/widgets/container_warning_check_money.dart';

@@ -9,7 +9,7 @@ class AppRoutes {
         (BuildContext context) => VerificationOptionsScreen(),
     'CodeVerification': (BuildContext context) => CodeVerificationScreen(),
     'InsertMoney': (BuildContext context) => InsertMoneyScreen(),
-    'CheckData': (BuildContext context) => CheckDataScreen(),
+    /* 'CheckData': (BuildContext context) => CheckDataScreen(), */
   };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {

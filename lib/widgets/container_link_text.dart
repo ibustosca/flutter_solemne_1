@@ -4,12 +4,14 @@ class ContainerLinkText extends StatelessWidget {
   final String texto;
   final VoidCallback onTap;
   final double top;
+  final double size;
 
   const ContainerLinkText({
     super.key,
     required this.texto,
     required this.onTap,
     required this.top,
+    this.size = 14.0,
   });
 
   @override
@@ -24,8 +26,8 @@ class ContainerLinkText extends StatelessWidget {
           tapTargetSize:
               MaterialTapTargetSize.shrinkWrap, // área de toque precisa
           foregroundColor: Colors.blue,
-          textStyle: const TextStyle(
-            fontSize: 14,
+          textStyle: TextStyle(
+            fontSize: size,
             fontWeight: FontWeight.w500,
             decoration: TextDecoration.none, // sin subrayado
           ),

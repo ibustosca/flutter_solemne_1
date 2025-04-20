@@ -21,6 +21,7 @@ const List<Map<String, String>> titulos = [
   {"bancosScreen": "Agregar cuenta bancaria"},
   {"insertMoney": "Cuánto dinero quieres retirar?"},
   {"checkData": "Revisa si está todo bien"},
+  {"done": "Listo! Los \$"},
 ];
 
 const List<Map<String, String>> enlaces = [
@@ -82,3 +83,11 @@ const Map<String, Map<String, dynamic>> botonesConEstilo = {
 const detalleSaldo = "De \$9.134 disponible";
 
 const mensajeMantencion = "Disculpe las molestias. Estamos en mantención.";
+
+const List<Map<String, String>> receiver = [
+  {"banco": "BancoEstado"},
+  {"tituloTitular": "Titular"},
+  {"titular": "Elizabeth Cerda"},
+  {"tituloCuenta": "Cuenta Vista - Número de cuenta"},
+  {"cuenta": "13676575"},
+];

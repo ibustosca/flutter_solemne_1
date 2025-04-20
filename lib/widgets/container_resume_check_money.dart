@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ContainerResumeCheckMoney extends StatelessWidget {
-  const ContainerResumeCheckMoney({super.key});
+  final String monto;
+  const ContainerResumeCheckMoney({super.key, required this.monto});
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +33,8 @@ class ContainerResumeCheckMoney extends StatelessWidget {
           ),
 
           // Texto '100' a la derecha
-          const Text(
-            '\$ 100',
+          Text(
+            '\$$monto',
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.w500,
