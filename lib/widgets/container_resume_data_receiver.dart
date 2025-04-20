@@ -50,7 +50,7 @@ class ContainerResumeDataReceiver extends StatelessWidget {
           SizedBox(height: 25),
 
           ContainerLinkText(
-            texto: 'Agregar otra cuenta',
+            texto: agregarCuenta,
             top: 0,
             onTap: () {
               Navigator.pushNamed(context, 'forzamosElError');

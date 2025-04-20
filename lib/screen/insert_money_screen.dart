@@ -25,7 +25,7 @@ class InsertMoneyScreen extends StatelessWidget {
           Expanded(
             child: Container(
               margin: const EdgeInsets.only(top: 20, bottom: 7),
-              color: Colors.grey[200], // fondo gris claro
+              color: Colors.grey[200],
             ),
           ),
         ],

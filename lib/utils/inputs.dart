@@ -62,6 +62,7 @@ const List<Map<String, dynamic>> listaGenericaDeVerificacion = [
 const List<Map<String, String>> botonesSimples = [
   {"verifica": "Verifica de otra forma"},
   {"otro": "Usar otro método"},
+  {"inicio": "Ir al inicio"},
 ];
 
 const Map<String, Map<String, dynamic>> botonesConEstilo = {
@@ -106,6 +107,7 @@ const List<Map<String, String>> receiver = [
 
 const List<Map<String, dynamic>> error = [
   {"icono": Icons.error_outline},
+  {"mensaje": "Lo sentimos, se ha producido un error."},
 ];
 
 const List<Map<String, String>> home = [
@@ -129,3 +131,17 @@ const Map<String, Map<String, dynamic>> miniCard = {
 };
 
 const invite = "¡Recomienda la app y gana hasta \$500.000!";
+const camino = "están en camino";
+const ayuda = "Ayuda";
+const tituloDescubreMas = "Descubre más";
+const imagePromo = "assets/images/promo_meli.png";
+const mensajeAcreditacion = "Se acreditarán el martes";
+const fechaAcreditacion = "22 de abril";
+const agregarCuenta = "Agregar otra cuenta";
+const successText1 = "¡Listo! Los \$";
+const successText2 = "están en camino";
+const successDescription1 =
+    "El dinero estará el martes 22 de abril en la cuenta del Banco Estado.\n";
+const successDescription2 =
+    "Cuando se acredite te lo confirmaremos por e-mail.";
+const warningInversion = "Estás usando dinero que tenés invertido";

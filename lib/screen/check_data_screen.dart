@@ -15,7 +15,6 @@ class CheckDataScreen extends StatelessWidget {
         )['checkData'];
     final enlace =
         enlaces.firstWhere((mapa) => mapa.containsKey('ayuda'))['ayuda'];
-    /* final montoController = TextEditingController(text: '0'); */
     return Scaffold(
       appBar: ContainerAppBar(titulo: titulo, ayudaUrl: enlace),
       body: Column(

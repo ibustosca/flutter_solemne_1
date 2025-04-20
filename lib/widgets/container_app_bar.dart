@@ -27,7 +27,7 @@ class ContainerAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Text(titulo!, style: const TextStyle(fontSize: 17)),
       actions: [
         IconButton(
-          tooltip: 'Ayuda',
+          tooltip: ayuda,
           onPressed: () {
             if (ayudaUrl != null) {
               abrirEnlaceExterno(ayudaUrl!);

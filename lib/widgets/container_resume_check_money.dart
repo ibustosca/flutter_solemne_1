@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../utils/inputs.dart';
 
 class ContainerResumeCheckMoney extends StatelessWidget {
   final String monto;
@@ -11,7 +12,6 @@ class ContainerResumeCheckMoney extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Columna de texto a la izquierda
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -19,20 +19,18 @@ class ContainerResumeCheckMoney extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(bottom: 2.0),
                   child: Text(
-                    'Se acreditarán el martes',
+                    mensajeAcreditacion,
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
                 Text(
-                  '22 de abril',
+                  fechaAcreditacion,
                   style: TextStyle(color: Colors.black, fontSize: 15),
                   softWrap: true,
                 ),
               ],
             ),
           ),
-
-          // Texto '100' a la derecha
           Text(
             '\$$monto',
             style: TextStyle(

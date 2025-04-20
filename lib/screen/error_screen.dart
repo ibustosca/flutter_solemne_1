@@ -12,16 +12,18 @@ class ErrorScreen extends StatelessWidget {
         titulos.firstWhere((mapa) => mapa.containsKey('error'))['error'];
     final enlace =
         enlaces.firstWhere((mapa) => mapa.containsKey('ayuda'))['ayuda'];
+    final mensaje =
+        error.firstWhere((mapa) => mapa.containsKey('mensaje'))['mensaje'];
+    final inicio =
+        botonesSimples.firstWhere(
+          (mapa) => mapa.containsKey('inicio'),
+        )['inicio'];
 
     return Scaffold(
       appBar: ContainerAppBar(titulo: titulo, ayudaUrl: enlace),
       body: Container(
         margin: const EdgeInsets.only(top: 300),
-        child: Column(
-          children: [
-            Center(child: Text('Lo sentimos, se ha producido un error.')),
-          ],
-        ),
+        child: Column(children: [Center(child: Text(mensaje))]),
       ),
       bottomNavigationBar: Container(
         color: Colors.white,
@@ -34,7 +36,7 @@ class ErrorScreen extends StatelessWidget {
             bottom: 20,
           ),
           child: ContainerLinkText(
-            texto: 'Ir al inicio',
+            texto: inicio!,
             top: 0,
             size: 17.0,
             onTap: () {

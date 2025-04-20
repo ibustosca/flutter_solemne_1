@@ -14,9 +14,14 @@ class SuccessScreen extends StatelessWidget {
         titulos.firstWhere((mapa) => mapa.containsKey('done'))['done'];
     final enlace =
         enlaces.firstWhere((mapa) => mapa.containsKey('ayuda'))['ayuda'];
+    final inicio =
+        botonesSimples.firstWhere(
+          (mapa) => mapa.containsKey('inicio'),
+        )['inicio'];
+
     return Scaffold(
       appBar: ContainerAppBar(
-        titulo: '${titulo!}$monto están en camino',
+        titulo: '${titulo!}$monto $camino',
         ayudaUrl: enlace,
       ),
       backgroundColor: Colors.grey[100],
@@ -41,7 +46,7 @@ class SuccessScreen extends StatelessWidget {
             bottom: 20,
           ),
           child: ContainerLinkText(
-            texto: 'Ir al inicio',
+            texto: inicio!,
             top: 0,
             size: 17.0,
             onTap: () {

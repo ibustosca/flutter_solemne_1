@@ -21,15 +21,14 @@ class ContainerLinkText extends StatelessWidget {
       child: TextButton(
         onPressed: onTap,
         style: TextButton.styleFrom(
-          padding: EdgeInsets.zero, // sin relleno extra
-          minimumSize: Size.zero, // evita altura mínima
-          tapTargetSize:
-              MaterialTapTargetSize.shrinkWrap, // área de toque precisa
+          padding: EdgeInsets.zero,
+          minimumSize: Size.zero,
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
           foregroundColor: Colors.blue,
           textStyle: TextStyle(
             fontSize: size,
             fontWeight: FontWeight.w500,
-            decoration: TextDecoration.none, // sin subrayado
+            decoration: TextDecoration.none,
           ),
         ),
         child: Text(texto),

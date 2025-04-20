@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../utils/inputs.dart';
 
 class ContainerSuccessCard extends StatelessWidget {
   final String monto;
@@ -11,7 +12,6 @@ class ContainerSuccessCard extends StatelessWidget {
       alignment: Alignment.topCenter,
       clipBehavior: Clip.none, // permite que el ícono sobresalga
       children: [
-        // Tarjeta blanca con padding superior para dejar espacio al ícono
         Padding(
           padding: const EdgeInsets.only(top: 30),
           child: Card(
@@ -23,7 +23,7 @@ class ContainerSuccessCard extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
               child: Text(
-                '¡Listo! Los \$$monto están en camino',
+                '$successText1 $monto $successText2',
                 style: const TextStyle(
                   fontSize: 21,
                   fontWeight: FontWeight.w600,

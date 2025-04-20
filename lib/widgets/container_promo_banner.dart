@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../utils/inputs.dart';
 
 class ContainerPromoBanner extends StatelessWidget {
   const ContainerPromoBanner({super.key});
@@ -11,7 +12,7 @@ class ContainerPromoBanner extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Descubre más',
+            tituloDescubreMas,
             style: TextStyle(
               fontSize: 17,
               fontWeight: FontWeight.w600,
@@ -21,10 +22,7 @@ class ContainerPromoBanner extends StatelessWidget {
           const SizedBox(height: 15),
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: Image.asset(
-              'assets/images/promo_meli.png', // asegúrate que esté en pubspec.yaml
-              fit: BoxFit.cover,
-            ),
+            child: Image.asset(imagePromo, fit: BoxFit.cover),
           ),
         ],
       ),

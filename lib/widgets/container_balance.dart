@@ -23,11 +23,7 @@ class ContainerBalance extends StatelessWidget {
               style: TextStyle(fontSize: 14, color: Colors.black87),
             ),
             const SizedBox(height: 8),
-
-            // Monto + icono
             const ContainerBalanceHeader(),
-
-            // Ganancias y porcentaje
             const ContainerBalanceSummary(),
 
             // Botones
